@@ -1,47 +1,43 @@
-# Privacy model
+# プライバシーモデル
 
-The privacy contract must be chosen before the cryptographic primitive.
+暗号方式を選ぶ前に、プライバシー上の約束を決定します。
 
-## Candidate private inputs
+## 秘密にする入力の候補
 
-- selected interests;
-- intentions or activities a participant wants to try;
-- compatibility preferences;
-- the number and identity of non-matching participants.
+- 選択した興味
+- 参加者が試したい活動や意図
+- 相性に関する希望
+- マッチしなかった参加者の人数と本人との対応
 
-This list describes possible inputs. The first product scenario will select the
-minimum required set.
+これは候補の一覧です。最初のプロダクトシナリオでは、必要最小限の入力を選びます。
 
-## Candidate outputs
+## 出力の候補
 
-The project should reveal the least informative output that still enables the
-desired experience. Possible outputs, from less to more revealing, include:
+目的とする体験を成立させられる範囲で、最も情報量の少ない結果を開示します。情報量の少ない順に、次のような候補があります。
 
-1. whether a threshold was met;
-2. a bounded compatibility score;
-3. the number of common items;
-4. the common items themselves.
+1. 閾値を満たしたか
+2. 範囲を制限した相性スコア
+3. 共通項目の数
+4. 共通項目そのもの
 
-No output has been selected yet.
+現時点では、どの出力も選択していません。
 
-## Parties to consider
+## 検討する主体
 
-- the participant supplying an input;
-- another participant;
-- a session or community operator;
-- computation or storage services;
-- an outside observer.
+- 入力を提供する参加者
+- もう一方の参加者
+- セッションまたはコミュニティの運営者
+- 計算または保存を行うサービス
+- 外部の観測者
 
-For the selected scenario, the project will document what each party knows
-before, during, and after the protocol.
+選択したシナリオについて、プロトコルの実行前・実行中・実行後に各主体が何を知るか文書化します。
 
-## Privacy-design questions
+## プライバシー設計上の問い
 
-- Who must not learn each input?
-- Is the output delivered to one participant or mutually?
-- Does learning that no match occurred reveal sensitive information?
-- Can repeated queries be combined to infer an input?
-- What metadata remains visible, such as timing, peer identity, and message
-  size?
-- What trust or non-collusion assumption does the protocol require?
+- 各入力を誰に知られないようにするか
+- 結果を片方だけに返すか、双方に返すか
+- マッチしなかった事実自体がセンシティブな情報を漏らさないか
+- 反復照合を組み合わせて入力を推測できないか
+- 時刻、通信相手、メッセージ量など、どのメタデータが残るか
+- どのような信頼または非共謀の仮定が必要か
 

@@ -1,40 +1,38 @@
-# Threat model
+# 脅威モデル
 
-This document is deliberately provisional. It records the questions that must
-be answered once the first interaction is selected.
+この文書は暫定版です。最初の操作を選んだ後で回答すべき問いを記録します。
 
-## Assets
+## 守る対象
 
-- private participant inputs;
-- computation results not intended for a given party;
-- associations between participants;
-- protocol secrets and credentials.
+- 参加者の秘密の入力
+- 特定の主体へ開示しない計算結果
+- 参加者同士の関係
+- プロトコルの秘密値と認証情報
 
-## Candidate adversaries
+## 攻撃者の候補
 
-- an honest-but-curious service operator;
-- a participant attempting to infer another participant's input;
-- a participant repeating queries with modified inputs;
-- multiple accounts controlled by one participant;
-- an observer of network or application metadata.
+- honest-but-curiousなサービス運営者
+- 他の参加者の入力を推測しようとする参加者
+- 入力を変更しながら照合を繰り返す参加者
+- 複数アカウントを操作する参加者
+- ネットワークやアプリケーションのメタデータを観測する者
 
-## Initially acceptable exclusions
+## 最初のバージョンで除外可能なもの
 
-- a compromised participant device;
-- voluntary disclosure after a result is revealed;
-- production availability attacks;
-- a formal guarantee against every Sybil attack;
-- malicious cryptographic implementations or dependency compromise.
+- 侵害された参加者端末
+- 結果開示後の自発的な情報公開
+- 本番環境の可用性に対する攻撃
+- あらゆるSybil攻撃に対する正式な保証
+- 悪意のある暗号実装または依存関係の侵害
 
-These are not claims of safety. They are possible boundaries for a first
-artifact and must be revisited after choosing the protocol.
+これらを安全だと主張するものではありません。最初の成果物で採用し得る境界であり、プロトコルの選択後に再検討します。
 
-## Required analysis before implementation is called complete
+## 実装完了前に必要な分析
 
-- define which adversaries are in scope;
-- state every trust and non-collusion assumption;
-- analyze dictionary and repeated-query attacks;
-- identify metadata leakage;
-- distinguish a demonstration parameter set from production-safe parameters;
-- explain what would be required for real-world deployment.
+- 対象とする攻撃者を定義する
+- 信頼と非共謀に関する仮定をすべて明記する
+- 辞書攻撃と反復照合を分析する
+- メタデータ漏洩を特定する
+- デモ用パラメータと本番利用可能なパラメータを区別する
+- 実運用に必要となる追加要件を説明する
 

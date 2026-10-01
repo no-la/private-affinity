@@ -1,27 +1,25 @@
-# Architecture decision records
+# アーキテクチャ意思決定記録
 
-This directory records decisions that shape the project. Decisions should be
-made from product and privacy requirements rather than from a preferred
-cryptographic primitive.
+このディレクトリには、プロジェクトを形作る意思決定を記録します。好みの暗号方式を起点にせず、プロダクトとプライバシーの要件から判断します。
 
-## Process
+## 運用方法
 
-1. Copy the structure of an existing ADR.
-2. Describe the context and realistic alternatives.
-3. Record the decision and its consequences.
-4. Mark superseded decisions instead of rewriting history.
+1. 既存のADRの構成をコピーする
+2. 背景と現実的な選択肢を説明する
+3. 決定とその影響を記録する
+4. 過去の記録を書き換えず、置き換えられた決定として残す
 
-## Index
+## 一覧
 
-- [ADR-0001: Start from the privacy contract](0001-privacy-contract-before-primitive.md)
+- [ADR-0001: 暗号方式より先にプライバシー上の約束を決める](0001-privacy-contract-before-primitive.md)
 
-## Decisions still needed
+## 今後必要な意思決定
 
-- first user scenario and interaction;
-- revealed output;
-- cryptographic primitive and library;
-- execution topology and trust assumptions;
-- single-device demonstration or multi-device prototype;
-- hosting and persistence;
-- license.
+- 最初の利用シナリオと操作
+- 開示する結果
+- 暗号方式とライブラリ
+- 実行構成と信頼の仮定
+- 単一端末デモか複数端末プロトタイプか
+- ホスティングとデータ保存
+- ライセンス
 

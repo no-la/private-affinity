@@ -1,50 +1,42 @@
-# Product definition
+# プロダクト定義
 
-## Problem
+## 課題
 
-People in a community may share interests, needs, or intentions but hesitate to
-publish them to the community or its operator. This prevents useful connections
-from being discovered.
+コミュニティの参加者同士が興味、需要、意図を共有していても、それをコミュニティ全体や運営者へ公開することには抵抗があるかもしれません。その結果、有益なつながりが発見されないままになります。
 
-## Product hypothesis
+## プロダクト仮説
 
-A participant is more willing to provide sensitive preferences when the system
-can evaluate a useful condition without disclosing the underlying input, and
-only the agreed result is revealed.
+秘密の入力を公開せずに有用な条件を評価し、合意した結果だけを開示できれば、参加者はセンシティブな希望も入力しやすくなります。
 
-## Candidate experience
+## 体験の候補
 
-1. A participant joins a small, closed session.
-2. Each participant privately supplies interests or preferences.
-3. The system evaluates a compatibility condition using programmable
-   cryptography.
-4. Only the specified result is revealed.
-5. Participants decide whether to connect or disclose more.
+1. 参加者が小規模な閉じたセッションへ参加する
+2. 各参加者が興味や希望を秘密に入力する
+3. Programmable Cryptographyを使って相性条件を評価する
+4. 仕様で定めた結果だけを開示する
+5. 参加者が接続または追加の情報開示をするか決める
 
-This flow is a hypothesis, not a committed interface.
+この流れは仮説であり、確定したインターフェースではありません。
 
-## Target outcome
+## 成果物の方向性
 
-The result should be an operable artifact: a web application, CLI, game, or
-interactive tool. A small multi-user prototype is preferred when feasible; an
-interactive single-device simulation remains acceptable if deployment would
-distract from the cryptographic idea.
+Webアプリ、CLI、ゲーム、インタラクティブツールなど、実際に操作できる作品を作ります。可能であれば小規模な複数人プロトタイプを目指します。デプロイ作業が暗号上のアイディアを妨げる場合は、単一端末上のインタラクティブなシミュレーションも選択肢とします。
 
-## Success criteria
+## 成功条件
 
-- Programmable cryptography is necessary to the central interaction.
-- A user can provide an input and observe a meaningful result.
-- The project states what is secret and what is revealed.
-- The reason for the selected primitive is understandable.
-- Limitations and remaining leakage are documented.
-- Another person can reproduce or try the result for free.
+- Programmable Cryptographyが中心的な体験に必要である
+- 利用者が入力し、意味のある結果を確認できる
+- 何を秘密にし、何を開示するか明記されている
+- 選んだ暗号方式を使う理由を説明できる
+- 制約と残る情報漏洩を文書化している
+- 他の人が無料で再現または試用できる
 
-## Open product decisions
+## 未決定のプロダクト事項
 
-- Who is the first intended user?
-- Is the interaction pairwise or group-based?
-- Are inputs selected from a fixed set or freely entered?
-- Is the output a Boolean threshold, a score, or a shared item?
-- Is mutual consent required before revealing the result?
-- Must the first version work across multiple devices?
+- 最初の対象利用者は誰か
+- 1対1か、グループでの操作か
+- 入力は固定された選択肢か、自由入力か
+- 出力は閾値の真偽、スコア、共通項目のどれか
+- 結果の開示前に双方の同意が必要か
+- 最初のバージョンを複数端末で動かす必要があるか
 

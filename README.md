@@ -1,62 +1,51 @@
 # Private Affinity
 
-Private Affinity is a programmable cryptography project for discovering shared
-interests or compatibility without revealing participants' private inputs.
+Private Affinityは、参加者の秘密の入力を公開せずに、共通点や相性を見つけるProgrammable Cryptographyプロジェクトです。
 
-## Status
+## 現在の状況
 
-The project is in its concept and protocol-design phase. Anonymous matching is
-the initial product idea, not a fixed implementation specification.
+現在はコンセプトとプロトコルの設計段階です。匿名マッチングは最初のプロダクト案であり、確定した実装仕様ではありません。
 
-## Goal
+## 目的
 
-Build something people can operate and experience—not merely a standalone
-cryptographic calculation—and demonstrate what becomes possible when private
-inputs remain hidden during computation.
+単独の暗号計算を動かすだけでなく、人が操作して体験できる作品を作り、秘密の入力を隠したまま計算することで何が可能になるかを示します。
 
-The first version should:
+最初のバージョンでは、次を満たすことを目指します。
 
-- use programmable cryptography as a core capability;
-- make a meaningful decision from private participant inputs;
-- reveal only a deliberately chosen result;
-- run or be reproducible at no cost;
-- explain its privacy boundary and limitations.
+- Programmable Cryptographyを中心的な機能として使う
+- 参加者の秘密の入力から意味のある判定を行う
+- 意図して選んだ結果だけを開示する
+- 無料で実行または再現できる
+- プライバシーの境界と制約を説明できる
 
-## Initial product idea
+## 最初のプロダクト案
 
-Participants in a small, closed community privately provide interests or
-intentions. The system evaluates a compatibility condition and enables a
-connection only when the chosen condition is satisfied.
+小規模な閉じたコミュニティの参加者が、興味や意図を秘密に入力します。システムは相性条件を評価し、設定した条件が成立した場合に限って接続の機会を提供します。
 
-This is a starting point. The interaction, revealed result, cryptographic
-primitive, and delivery format remain open until they have been evaluated
-together.
+これは出発点です。操作方法、開示する結果、暗号方式、提供形態は、それぞれを一緒に検討してから決定します。
 
-## Design principle
+## 設計原則
 
-Choose the experience and privacy contract first, then select an appropriate
-primitive such as PSI, zero-knowledge proofs, MPC, FHE, or threshold
-cryptography. A primitive is not the product by itself.
+まず体験とプライバシー上の約束を決め、その後でPSI、ゼロ知識証明、MPC、FHE、Threshold Cryptographyなどから適切な方式を選びます。暗号方式そのものをプロダクトにはしません。
 
-## Documentation
+## ドキュメント
 
-- [Product definition](docs/product.md)
-- [Privacy model](docs/privacy-model.md)
-- [Threat model](docs/threat-model.md)
-- [Architecture decisions](docs/decisions/README.md)
+- [プロダクト定義](docs/product.md)
+- [プライバシーモデル](docs/privacy-model.md)
+- [脅威モデル](docs/threat-model.md)
+- [アーキテクチャ意思決定記録](docs/decisions/README.md)
 
-## Current non-goals
+## 現時点での非目標
 
-- production-grade availability;
-- commercial authentication and monitoring;
-- large-scale deployment;
-- a formal security audit;
-- complete Sybil resistance.
+- 本番水準の可用性
+- 商用水準の認証と監視
+- 大規模な展開
+- 正式なセキュリティ監査
+- 完全なSybil耐性
 
-These can be reconsidered if the selected experience requires them.
+選んだ体験に不可欠だと分かった場合は再検討します。
 
-## Next decision
+## 次に決めること
 
-Define one concrete user interaction and its privacy contract: who supplies
-which secret, who performs the computation, and exactly what each party learns.
+具体的な操作を1つ選び、そのプライバシー上の約束を定義します。誰がどの秘密を入力し、誰が計算を行い、各主体が最終的に何を知るのかを明らかにします。
 

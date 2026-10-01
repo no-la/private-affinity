@@ -1,29 +1,21 @@
-# ADR-0001: Start from the privacy contract
+# ADR-0001: 暗号方式より先にプライバシー上の約束を決める
 
-- Status: Accepted
-- Date: 2026-10-01
+- 状態: 採用
+- 日付: 2026-10-01
 
-## Context
+## 背景
 
-The project exists to build an artifact using programmable cryptography. PSI,
-zero-knowledge proofs, MPC, FHE, and threshold cryptography could each support
-different interactions and trust models. Selecting one before defining the
-experience would allow the technology to dictate the product and could result
-in unnecessary disclosure or complexity.
+このプロジェクトの目的は、Programmable Cryptographyを使った作品を作ることです。PSI、ゼロ知識証明、MPC、FHE、Threshold Cryptographyは、それぞれ異なる操作や信頼モデルを実現できます。体験を定義する前に方式を選ぶと、技術がプロダクトを決めてしまい、不要な情報開示や複雑性を招く可能性があります。
 
-## Decision
+## 決定
 
-Define the user interaction, private inputs, revealed result, parties, and trust
-assumptions before selecting the cryptographic primitive or system topology.
+暗号方式やシステム構成を選ぶ前に、利用者の操作、秘密の入力、開示する結果、関係する主体、信頼の仮定を定義します。
 
-Anonymous affinity matching is the initial idea, but it does not constrain the
-final interaction or implementation.
+匿名の相性マッチングは最初のアイディアですが、最終的な操作や実装を制約するものではありません。
 
-## Consequences
+## 影響
 
-- No cryptographic primitive is selected by this ADR.
-- The next project milestone is a concrete privacy contract for one interaction.
-- Candidate protocols will be compared against the same product and privacy
-  requirements.
-- A simpler artifact is acceptable when it demonstrates the chosen capability
-  more clearly.
+- このADRでは暗号方式を選択しない
+- 次のマイルストーンは、具体的な操作1つについてプライバシー上の約束を定義すること
+- 候補となるプロトコルは、同一のプロダクト要件とプライバシー要件に照らして比較する
+- 選んだ能力をより明確に示せる場合は、単純な成果物を選んでもよい
