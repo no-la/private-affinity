@@ -20,7 +20,7 @@
 3. 共通項目の数
 4. 共通項目そのもの
 
-最初の操作では、両者が選んだ共通項目だけを双方へ開示する案を[ADR-0002](decisions/0002-first-operation-mutual-match.md)で提案しています。
+最初の操作では、両者が選んだ共通項目だけを双方へ開示することを[ADR-0002](decisions/0002-first-operation-mutual-match.md)で決定しました。
 
 ## 検討する主体
 

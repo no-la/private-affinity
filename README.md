@@ -47,4 +47,4 @@ Private Affinityは、参加者の秘密の入力を公開せずに、共通点�
 
 ## 次に決めること
 
-1対1で共通する選択肢を開示する操作と、そのプライバシー上の約束を[ADR-0002](docs/decisions/0002-first-operation-mutual-match.md)で提案しています。提案の採否を決めた後、同じ要件に対する暗号方式と信頼モデルを比較します。
+1対1で共通する選択肢を双方へ開示する操作を[ADR-0002](docs/decisions/0002-first-operation-mutual-match.md)で決定しました。最初の暗号プロトタイプに使う方式と信頼モデルを[ADR-0003](docs/decisions/0003-two-party-computation-prototype.md)で提案しています。
