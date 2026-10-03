@@ -12,12 +12,11 @@
 ## 一覧
 
 - [ADR-0001: 暗号方式より先にプライバシー上の約束を決める](0001-privacy-contract-before-primitive.md)
-- [ADR-0002: 最初の操作を1対1の相互一致判定にする](0002-first-operation-mutual-match.md)（提案）
+- [ADR-0002: 最初の操作を1対1の相互一致判定にする](0002-first-operation-mutual-match.md)
+- [ADR-0003: 最初の暗号プロトタイプに2者間計算を使う](0003-two-party-computation-prototype.md)（提案）
 
 ## 今後必要な意思決定
 
-- 暗号方式とライブラリ
-- 実行構成と信頼の仮定
 - 単一端末デモか複数端末プロトタイプか
 - ホスティングとデータ保存
 - ライセンス
